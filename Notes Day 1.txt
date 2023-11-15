@@ -1,0 +1,28 @@
+15 November 2023, SAP UX
+
+1. How web works?
+-- Working mechanism of url, about http, get, post, working of server, html, markup langugage, html elements,description of boilerplate html, comment, html codes - 400,401,403,500,200, .. , . image tag, absolute tag, anchor tag, <b>, <i>, <u>, <sup>, <sub>, <pre>, <div>, <ul>, <li>, <ol>, <table>, <th>, <tr>, <td>, <caption>, <colspan>, <rowspan>, <form> , <post> ,get>, <post>, <patch>, <delete>, <radio>, <input type="">, <textarea>, <select>, <option>, <iframe>, <video>, <source>
+-- Visual appearance --
+1) Inline style
+2) color: rgba(255,0,0,0.5)
+3) background-color: rgba(255,0,0,0.5)
+4) Selelctor - element selector p{}, class selector .className {}, ID selector #elementID {}, Universal Selector *{}
+5) Text align
+6) Text decoration
+7) font weight
+8) text transform
+9) px (Pixels): font-size: 16px; width : 4in;
+10) line height
+11) box model in css - height, width, border, padding ,margin
+12) div tag - block
+13) shorthand - element { padding: value;}
+14) display property 
+12) span - inline
+13) element - { background-image, background-repeat, background-size, background-position }
+14) flexbox - display
+15) flex-direction -{row, row-reverse, column, column-reverse}
+16) flex properties - { display, flex-direction, justify-content, align-items, flex-wrap }
+17) @media screen and (media_feature)
+18) transition
+19) transform
+20) animation
