@@ -13,26 +13,42 @@
 // }
 // outer();
 
-function abc() {
-    var oPromiscall = new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            var data = { id: "0001" };
-            var response = {};
-            response.code = 500;
-            if (response.code == 200) {
-                resolve(data);
-            }
-            else {
-                reject(response);
-            }
-        }, 2000);
-    });
-    return oPromiscall;
+// function asyncPromise() {
+//     var oPromiscall = new Promise(function (resolve, reject) {
+//         setTimeout(function () {
+//             var data = { id: "0001" };
+//             var response = {};
+//             response.code = 200;
+//             if (response.code == 200) {
+//                 resolve(data);
+//             }
+//             else {
+//                 reject(response);
+//             }
+//         }, 2000);
+//     });
+//     return oPromiscall;
+// }
+
+// var oResponse = asyncPromise();
+// console.log(12345)
+// oResponse.then(
+//     function (successresponse) {},
+//     function (errorresponse) {}
+// ).catch(function () {});
+
+// async function callAsync() {
+//     try{
+//         var a = await asyncPromise();
+//     }catch(e){
+//         debugger;
+//     }
+// }
+
+// callAsync();
+
+function printMessage(){
+    console.log("This message will be printed every 2000ms (2 seconds).");
 }
 
-var oResponse = abc();
-
-oResponse.then(
-    function (successresponse) {},
-    function (errorresponse) {}
-).catch(function () {});
+setInterval(printMessage,2000);
