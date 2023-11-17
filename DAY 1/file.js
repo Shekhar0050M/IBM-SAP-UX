@@ -47,8 +47,29 @@
 
 // callAsync();
 
-function printMessage(){
-    console.log("This message will be printed every 2000ms (2 seconds).");
+// function printMessage(){
+//     console.log("This message will be printed every 2000ms (2 seconds).");
+// }
+
+// setInterval(printMessage,2000);
+
+
+// sap.ui.define(["sap/m/MessageBox", "sap/ui/core/format/DateFormat"],
+//     function (MessageBox, DateFormat) {
+//         return {
+//             showDate: function(odate){
+//                 var oDateFormat = DateFormat.getDateFormatter();
+//                 var sDate = oDateFormat.format(odate);
+//                 MessageBox.show(sDateDate,{
+//                     title:'Message'
+//                 });
+//             }
+//         }
+//     }
+// );
+
+function hello(){
+    console.log("Hello!");
 }
 
-setInterval(printMessage,2000);
+setInterval(hello,5000);
