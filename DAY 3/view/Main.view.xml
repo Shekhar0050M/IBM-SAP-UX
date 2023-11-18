@@ -1,0 +1,3 @@
+<mvc:View xmlns:mvc = "sap.ui.core.mvc" xmlns="sap.m" controllerName="com.ibm.simpleapp.com">
+<Button text="text"/>
+</mvc:View>

@@ -11,8 +11,6 @@ sap.ui.define([
     }).placeAt("content");
 });
 
-
-
 sap.ui.require([
     "sap/m/Button",
     "sap/m/MessageToast"

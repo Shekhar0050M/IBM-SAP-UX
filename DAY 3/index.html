@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI5</title>
+    <script id="sap-ui-bootstrap" src="https://sapui5.hana.ondemand.com/1.71.60/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_belize" data-sap-ui-libs="sap.m" data-sap-ui-resourceroots='{"com.ibm.simpleapp":"./"}'
+        data-sap-ui-async="true">
+        </script>
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            var oButton = new sap.m.Button({
+                id: "button",
+                text: "Show Button"
+            }).placeAt("content");
+            
+            sap.ui.require(["sap/ui/core/mvc"], function (oView) {
+                oView.create({
+                    id: "idView",
+                    type: sap.ui.core.mvc.ViewType.XML,
+                    viewName: "com.ibm.simpleapp.view.Main"
+                }).then(function (oView) {
+                    oView.placeAt("content");
+                }).catch(function (err) {
+                    console.error(err);
+                })
+            });
+        });
+    </script>
+</head>
+
+<body class="sapUiBody" id="content"></body>
+
+</html>
