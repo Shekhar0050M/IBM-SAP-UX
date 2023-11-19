@@ -1,0 +1,31 @@
+<mvc:View
+    xmlns:form="sap.ui.layout.form"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="Assignment_3.controller.App"
+>
+    <VBox>
+        <form:SimpleForm
+            id="userForm"
+            title="User Information"
+            layout="ResponsiveGridLayout"
+        >
+            <form:content>
+                <form:FormContainer>
+                    <form:FormElement>
+                        <Label text="First Name" />
+                        <Input value="{userModel>firstName}"/>
+                    </form:FormElement>
+                    <form:FormElement>
+                        <Label text="Last Name" />
+                        <Input value="{userModel>lastName}"/>
+                    </form:FormElement>
+                </form:FormContainer>
+            </form:content>
+        </form:SimpleForm>
+        <Button
+            text="Submit"
+            press="onSubmit"
+        />
+    </VBox>
+</mvc:View>
