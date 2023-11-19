@@ -9,4 +9,8 @@ sap.ui.define([
 			MessageToast.show("Hello World!");
 		}
 	}).placeAt("content");
+	var oButton = new Button({
+		Text: "Click here"
+	});
+	oButton.placeAt("content");
 });
