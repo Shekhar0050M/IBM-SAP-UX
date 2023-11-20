@@ -12,6 +12,28 @@
           <Label text="Email" />
           <Input id="emailInput" type="Email" placeholder="Enter email" />
 
+          <Label text="Phone Number" />
+          <Input id="phoneInput" type="Email" placeholder="Enter email" />
+
+          <Button text="Submit" press="onSubmit" />
+        </form:SimpleForm>
+      </VBox>
+    </Page>
+    <Page title="Office Information">
+      <VBox>
+        <form:SimpleForm id="officeForm" editable="true" layout="ResponsiveGridLayout" title="Office Details">
+          <Label text="Company Name" />
+          <Input id="companyNameInput" placeholder="Enter Company name" type="Text"/>
+
+          <Label text="Company Website" />
+          <Input value="companyWebsiteInput" placeholder="Enter Company Website" type="Url"/>
+
+          <Label text="Phone Number" />
+          <Input value="phoneInput" type="Text" placeholder="Enter Phone Number" />
+
+          <Label text="Company Address" />
+          <Input id="companyAddressInput" type="Text" placeholder="Enter Company Address" />
+
           <Button text="Submit" press="onSubmit" />
         </form:SimpleForm>
       </VBox>

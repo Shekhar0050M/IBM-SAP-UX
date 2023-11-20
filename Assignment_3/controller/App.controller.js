@@ -5,7 +5,7 @@ sap.ui.define([
   
     return Controller.extend("com.ui5learners.controller.Main", {
       onInit: function() {
-        // Controller initialization logic
+        console.log("Form initialised.")
       },
   
       onSubmit: function() {
