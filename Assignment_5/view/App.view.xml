@@ -1,0 +1,23 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="your.app.namespace.Controller"
+    xmlns:core="sap.ui.core"
+>
+    <App>
+        <Page title="Product Master-Detail Page">
+            <List
+                items="{
+          path: '/products',
+          templateShareable: false
+        }"
+            >
+                <ObjectListItem
+                    title="{name}"
+                    type="Active"
+                    press="onListItemPress"
+                />
+            </List>
+        </Page>
+    </App>
+</mvc:View>
