@@ -5,25 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8">
     <title>Your SAPUI5 App</title>
-    <script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" id="sap-ui-bootstrap"
-        data-sap-ui-theme="sap_belize" data-sap-ui-libs="sap.m" data-sap-ui-xx-bindingSyntax="complex"
-        data-sap-ui-resourceroots='{
-            "your.namespace": "./"
-          }'>
+    <script id="sap-ui-bootstrap" type="text/javascript" src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_belize" data-sap-ui-compatVersion="edge"
+        data-sap-ui-resourceroots='{"your.namespace": "./"}'>
         </script>
     <script>
         sap.ui.getCore().attachInit(function () {
-            sap.ui.require([
-                "sap/ui/core/ComponentContainer"
-            ], function (ComponentContainer) {
-                new ComponentContainer({
-                    name: "your.namespace",
-                    settings: {
-                        id: "YourApp"
-                    },
-                    async: true
-                }).placeAt("content");
-            });
+            new sap.ui.core.ComponentContainer({
+                height: "100%",
+                name: "your.namespace"
+            }).placeAt("content");
         });
     </script>
 </head>
