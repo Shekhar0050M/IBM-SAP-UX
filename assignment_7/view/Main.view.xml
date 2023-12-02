@@ -1,0 +1,15 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="your.namespace.Main"
+>
+    <VBox
+        xmlns="sap.m"
+        class="sapUiContentPadding"
+    >
+        <Button
+            text="Hover me"
+            customhover="onCustomHover"
+        />
+    </VBox>
+</mvc:View>
