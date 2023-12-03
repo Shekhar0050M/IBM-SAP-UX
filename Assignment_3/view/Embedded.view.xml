@@ -1,0 +1,6 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+    <Button text="CLick me, I am embedded button" />
+</mvc:View>

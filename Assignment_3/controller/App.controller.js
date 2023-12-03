@@ -1,17 +1,20 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-  ], function(Controller) {
+    "sap/m/Button",
+    "sap/ui/core/mvc/XMLView",
+    "sap/ui/core/mvc/JSONView"
+], function (Button, XMLView, JSONView) {
     "use strict";
-  
-    return Controller.extend("com.ui5learners.controller.Main", {
-      onInit: function() {
-        console.log("Form initialised.")
-      },
-  
-      onSubmit: function() {
-        // Handle form submission
-        alert("Form submitted!");
-      }
+    // new Button({
+    //     text: "Click me JS"
+    // }).placeAt("content");
+    XMLView.create({
+        viewName: "com.ibm.application.view.App"
+    }).then(function (oView) {
+        oView.placeAt("content");
     });
-  });
-  
+    // JSONView.create({
+    //     viewName: "com.ibm.application.view.App"
+    // }).then(function (oView) {
+    //     oView.placeAt("content");
+    // });
+});

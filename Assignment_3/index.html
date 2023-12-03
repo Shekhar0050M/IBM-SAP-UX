@@ -2,45 +2,15 @@
 <html>
 
 <head>
-  <title>SAPUI5 App with SimpleForm</title>
-  <script id="sap-ui-bootstrap" src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-    data-sap-ui-theme="sap_belize"
-    data-sap-ui-libs="sap.m,sap.ui.layout"
-    data-sap-ui-async="true">
-  </script>
-  <script>
-    sap.ui.define([
-      "sap/ui/core/mvc/XMLView",
-      "sap/ui/core/mvc/Controller"
-    ], function(XMLView, Controller) {
-      "use strict";
-
-      return Controller.extend("com.ui5learners.controller.Main", {
-        onInit: function() {
-          // Create the XML view
-          var oXMLView = XMLView.create({
-            viewName: "com.ui5learners.view.Main",
-            controller: this // Attach the controller to the view
-          });
-
-          // Place the XML view in the HTML content area
-          oXMLView.placeAt("content");
-        },
-
-        onSubmit: function() {
-          // Implement your logic for form submission here
-          var firstName = this.getView().byId("firstNameInput").getValue();
-          var lastName = this.getView().byId("lastNameInput").getValue();
-          var email = this.getView().byId("emailInput").getValue();
-
-          // You can use the values as needed, e.g., send them to a backend service
-          console.log("Form submitted:", firstName, lastName, email);
-        }
-      });
-    });
-  </script>
+    <meta charset="utf-8">
+    <title>Quickstart Tutorial</title>
+    <script id="sap-ui-bootstrap" src="https://sdk.openui5.org/resources/sap-ui-core.js" data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m" data-sap-ui-resourceroots='{"com.ibm.application": "./"}'
+        data-sap-ui-onInit="module:com/ibm/application/controller/App.controller" data-sap-ui-compatVersion="edge"
+        data-sap-ui-async="true">
+        </script>
 </head>
 
-<body id="content" class="sapUiBody"></body>
+<body class="sapUiBody" id="content"></body>
 
 </html>
