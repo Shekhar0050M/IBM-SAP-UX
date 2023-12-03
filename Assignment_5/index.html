@@ -2,45 +2,15 @@
 <html>
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <title>Product Master-Detail Page</title>
-    <script id="sap-ui-bootstrap" type="text/javascript"
-        src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" data-sap-ui-theme="sap_fiori_3"
-        data-sap-ui-libs="sap.m" data-sap-ui-async="true" data-sap-ui-compatVersion="edge"
-        data-sap-ui-resourceroots='{"your.app.namespace": "./"}'>
+    <title>Quickstart Tutorial</title>
+    <script id="sap-ui-bootstrap" src="https://sdk.openui5.org/resources/sap-ui-core.js" data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m" data-sap-ui-resourceroots='{"com.ibm.application": "./"}'
+        data-sap-ui-onInit="module:com/ibm/application/controller/App.controller" data-sap-ui-compatVersion="edge"
+        data-sap-ui-async="true">
         </script>
-
-    <style>
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-        }
-    
-        sap.m.List {
-            width: 30%;
-            background-color: #ddd;
-        }
-    
-        sap.m.ObjectListItem:hover {
-            background-color: #ccc;
-        }
-    
-        sap.m.VBox {
-            padding: 1em;
-        }
-    </style>
 </head>
 
-<body class="sapUiBody" id="content">
-    <script>
-        sap.ui.getCore().attachInit(function () {
-            sap.ui.xmlview({
-                viewName: "your.app.namespace.MasterPage"
-            }).placeAt("content");
-        });
-    </script>
-</body>
+<body class="sapUiBody" id="content"></body>
 
 </html>

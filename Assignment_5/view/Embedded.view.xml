@@ -1,0 +1,20 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    controllerName="com.ibm.application.controller.App"
+>
+    <!-- <Button text="CLick me, I am embedded button" /> -->
+    <!-- <core:Fragment
+        fragmentName="com.ibm.application.fragments.App"
+        type="XML"
+    />
+    <core:Fragment
+        fragmentName="com.ibm.application.fragments.App"
+        type="HTML"
+    /> -->
+    <Button
+        text="Registration Button"
+        press=".onRegistrationButtonPress"
+    />
+</mvc:View>
