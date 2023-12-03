@@ -1,15 +1,16 @@
+<!-- Main.view.xml -->
 <mvc:View
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
-    controllerName="your.namespace.Main"
+    xmlns:custom="com.ibm.assignment.controls"
+    controllerName="com.ibm.assignment.controller.Main"
 >
-    <VBox
-        xmlns="sap.m"
-        class="sapUiContentPadding"
-    >
-        <Button
-            text="Hover me"
-            customhover="onCustomHover"
+    <App>
+        <!-- Use the CustomButton control -->
+        <custom:CustomButton
+            text="Click me"
+            press=".onButtonClick"
         />
-    </VBox>
+        <Button text="Hello" />
+    </App>
 </mvc:View>
