@@ -1,6 +1,0 @@
-<mvc:View
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m"
-    controllerName="Assignment_2.view.Main.view">
-    <Button text="Click me"/>
-</mvc:View>

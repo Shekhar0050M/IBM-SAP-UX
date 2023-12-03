@@ -1,36 +1,16 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-    <title>Assignment 2</title>
-    <script id="sap-ui-bootstrap" src="https://sapui5.hana.ondemand.com/1.71.60/resources/sap-ui-core.js"
-        data-sap-ui-theme="sap_belize" data-sap-ui-libs="sap.m" data.sap.ui.compatVersion="edge"
-        data-sap-ui-async="true" data-sap-ui-resourceroots='{"Assignment_2":"./"}'>
-        </script>
-        <script>
-            sap.ui.getCore().attachInit(function(){
-                alert("inside_attachInit");
-                var oButton = new sap.m.Button({
-                    text: "Click here!"
-                });
-                oButton.placeAt("content");
-            });
-            alert("outside_attachInit");
-            sap.ui.define([
-                "sap/ui/core/mvc/XMLView",
-                "Assignment_2/Controller/Main.controller"
-            ], function(XMLView){
-                "use strict";
-                var oXMLView = XMLView.create({
-                    viewName: "Assignment_2.View.Main.view",
-                    controller: new sap.ui.controller("Assignment_2.Controller.Main.controller")
-                });
-                oXMLView.placeAt("content");
-            });
+    <meta charset="utf-8">
+    <title>Quickstart Tutorial</title>
+    <script id="sap-ui-bootstrap" src="https://sdk.openui5.org/resources/sap-ui-core.js" data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m" data-sap-ui-resourceroots='{"com.ibm.application": "./"}'
+        data-sap-ui-onInit="module:com/ibm/application/controller/App.controller" data-sap-ui-compatVersion="edge"
+        data-sap-ui-async="true">
         </script>
 </head>
 
-<body name="sapUiBody">
-    <div id="content"></div>
-</body>
+<body class="sapUiBody" id="content"></body>
 
 </html>
