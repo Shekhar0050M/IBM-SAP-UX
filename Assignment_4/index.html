@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI5 </title>
-    <script id="sap-ui-bootstrap" src="https://sapui5.hana.ondemand.com/1.71.60/resources/sap-ui-core.js"
-        data-sap-ui-theme="sap_belize" data-sap-ui-libs="sap.m" data-sap-ui-resourceroots='{"com.ibm.simpleapp":"./"}'
+    <meta charset="utf-8">
+    <title>Quickstart Tutorial</title>
+    <script id="sap-ui-bootstrap" src="https://sdk.openui5.org/resources/sap-ui-core.js" data-sap-ui-theme="sap_belize"
+        data-sap-ui-libs="sap.m" data-sap-ui-resourceroots='{"com.ibm.application": "./"}'
+        data-sap-ui-onInit="module:com/ibm/application/controller/App.controller" data-sap-ui-compatVersion="edge"
         data-sap-ui-async="true">
         </script>
 </head>
-/* */
-<body id="content">
-    <div data-sap-ui-type="sap.m.Input" data-value="12345"></div>
-</body>
+
+<body class="sapUiBody" id="content"></body>
 
 </html>

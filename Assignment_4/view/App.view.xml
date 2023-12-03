@@ -1,0 +1,42 @@
+<mvc:View
+    xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:layout="sap.ui.layout"
+    controllerName="com.ibm.application.controller.App"
+>
+    <!-- <Button
+        text="Click me XML"
+        press=".onButtonPress"
+    /> -->
+    <mvc:XMLView viewName="com.ibm.application.view.Embedded" />
+    <!-- <form:SimpleForm>
+        <Title text="Personal details" />
+        <Label text="First Name" />
+        <Input value="{/firstName}" />
+        <Label text="Last Name" />
+        <Input value="{/lastName}" />
+        <Label text="Email" />
+        <Input value="{/email}" />
+        <Label text="Phone Number" />
+        <Input value="{/phoneNumber}">
+            <layoutData>
+                <layout:GridData span="XL1" />
+            </layoutData>
+        </Input>
+        <Title text="Office details" />
+        <Label text="Company Name" />
+        <Text text="IBM" />
+        <Label text="Company website" />
+        <Link
+            text="www.ibm.com/"
+            href="https://www.ibm.com/in-en"
+        />
+        <Label text="Company Phone number" />
+        <Text text="+91 8067423333" />
+        <Label text="Company Address" />
+        <TextArea
+            value="3JMR+Q5Q, Bhartiya City, Kannuru, Bengaluru, Karnataka 560064"
+        />
+    </form:SimpleForm> -->
+</mvc:View>
