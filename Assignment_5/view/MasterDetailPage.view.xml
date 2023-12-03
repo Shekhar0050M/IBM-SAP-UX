@@ -1,7 +1,6 @@
 <mvc:View
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
-    xmlns:core="sap.ui.core"
     controllerName="com.ibm.application.controller.MasterDetailPage"
 >
     <!-- <Button
@@ -9,7 +8,7 @@
         press=".onClick"
     /> -->
     <List
-        items="{products>/products.title}"
+        items="{products>/products}"
         selectionChange="onSelectionChange"
     >
         <items>
@@ -35,13 +34,8 @@
                         text="{products>stock}"
                     />
                 </attributes>
-                <firstStatus>
-                    <ObjectStatus
-                        text="In Stock"
-                        state="{= ${products>stock} > 0 ? 'Success' : 'Error'}"
-                    />
-                </firstStatus>
             </ObjectListItem>
         </items>
     </List>
 </mvc:View>
+<!-- Remember hierarchy list -{items - {ObjectListItem - {{attributes - ObjectAttribute},{firstStatus - ObjectStatus}}}} -->

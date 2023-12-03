@@ -1,17 +1,20 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel"
-], function (JSONModel, Controller) {
+], function (Controller, JSONModel) {
     "use strict";
     return Controller.extend("com.ibm.application.controller.MasterDetailPage", {
         onInit: function () {
-            var oModel = new JSONModel();
-            oModel.loadData("./com/ibm/application/products.json", {}, false); // Set async to false for simplicity
-            console.log("Model Data:", oModel.getData());
+
+            const oData = {
+                recipient: {
+                    name: "World"
+                }
+            };
+            // const oModel = new JSONModel(oData);
+            const oModel = new JSONModel(sap.ui.require.toUrl("com/ibm/application/products.json"));
             this.getView().setModel(oModel, "products");
-        },
-        onClick: function () {
-            alert("Hello");
         }
     });
 });
+//Keep in mind about how to align things in function()
