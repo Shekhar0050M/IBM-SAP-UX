@@ -1,0 +1,21 @@
+<core:FragmentDefinition
+    xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    controllerName="com.ibm.assignment.controller.Main"
+>
+    <Dialog
+        id="simpleFormDialog"
+        title="Ticket Dialog"
+    >
+        <form:SimpleForm>
+            <Title text="Book Ticket" />
+            <Label text="First Name" />
+            <Input value="{/firstname}" />
+            <Button
+                text="Submit"
+                press=".onCloseDialog"
+            />
+        </form:SimpleForm>
+    </Dialog>
+</core:FragmentDefinition>
