@@ -6,7 +6,7 @@
     controllerName="com.ibm.assignment.controller.MovieCard"
 >
     <!-- <Button text="Click here" /> -->
-    <!-- <VBox>
+    <VBox>
         <List
             items="{movies>/movies}"
             selectionChange="onSelectionChange"
@@ -40,12 +40,12 @@
                 </ObjectListItem>
             </items>
         </List>
-    </VBox> -->
-    <Page title="Movie Details">
+    </VBox>
+    <!-- <Page title="Movie Details">
         <VBox>
             <custom:CustomList items="{movies>/movies}" />
         </VBox>
-    </Page>
+    </Page> -->
 </mvc:View>
 <!-- I could use this in List but I can't use two things, there could be either one becouse list binding supports a single template.  -->
 <!-- // <InputListItem> 
