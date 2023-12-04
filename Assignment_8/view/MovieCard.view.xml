@@ -1,0 +1,53 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:custom="com.ibm.assignment.controls"
+    controllerName="com.ibm.assignment.controller.MovieCard"
+>
+    <!-- <Button text="Click here" /> -->
+    <!-- <VBox>
+        <List
+            items="{movies>/movies}"
+            selectionChange="onSelectionChange"
+        >
+            <items>
+                <ObjectListItem>
+                    <attributes>
+                        <ObjectAttribute
+                            title="Title"
+                            text="{movies>title}"
+                        />
+
+                        <ObjectAttribute
+                            title="Genres"
+                            text="{movies>genres}"
+                        />
+                        <ObjectAttribute
+                            title="Release Year"
+                            text="{movies>year}"
+                        />
+                        <ObjectAttribute
+                            title="Book Ticket"
+                            text="Available"
+                            press=".bookTickets"
+                            active="true"
+                        />
+                    </attributes>
+                    <firstStatus>
+                        <ObjectStatus text="{movies>cast}" />
+                    </firstStatus>
+                </ObjectListItem>
+            </items>
+        </List>
+    </VBox> -->
+    <Page title="Movie Details">
+        <VBox>
+            <custom:CustomList items="{movies>/movies}" />
+        </VBox>
+    </Page>
+</mvc:View>
+<!-- I could use this in List but I can't use two things, there could be either one becouse list binding supports a single template.  -->
+<!-- // <InputListItem> 
+     // <Button text="Book ticket" />
+     // </InputListItem> -->
