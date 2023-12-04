@@ -6,10 +6,10 @@
 >
     <Dialog
         id="simpleFormDialog"
-        title="Dialog Title"
+        title="Ticket Dialog"
     >
         <form:SimpleForm>
-            <Title text="Sample form" />
+            <Title text="Book Ticket" />
             <Label text="First Name" />
             <Input value="{/firstname}" />
             <Button
