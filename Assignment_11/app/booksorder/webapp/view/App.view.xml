@@ -1,0 +1,69 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns:uxap="sap.uxap">
+    <uxap:ObjectPageLayout id="objectPage">
+
+        <uxap:sections>
+            <uxap:ObjectPageSection id="_IDGenObjectPageSection1" title="Book Overview" showTitle="true">
+                <!-- Subsection for Book Details -->
+                <uxap:ObjectPageSubSection id="_IDGenObjectPageSubSection1" title="Book Details">
+                    <!-- List Report Table -->
+                    <m:Table id="idProductsTable"
+                           sticky="HeaderToolbar,ColumnHeaders"
+                           inset="false"
+                           items="{
+                               path: '/Books',
+                               sorter: {
+                                   path: 'ID'
+                               }
+                           }"
+                           class="sapFDynamicPageAlignContent"
+                           width="auto">
+                        <m:headerToolbar>
+                            <m:Toolbar id="_IDGenToolbar1">
+                                <m:Title id="_IDGenTitle3" text="Books" level="H2"/>
+                            </m:Toolbar>
+                        </m:headerToolbar>
+                        <m:columns>
+                            <m:Column id="_IDGenColumn1" width="12em">
+                                <m:Text id="_IDGenText1" text="Title" />
+                            </m:Column>
+                            <m:Column id="_IDGenColumn2" demandPopin="true">
+                                <m:Text id="_IDGenText2" text="Description" />
+                            </m:Column>
+                            <m:Column id="_IDGenColumn3" demandPopin="true" hAlign="End">
+                                <m:Text id="_IDGenText3" text="Price" />
+                            </m:Column>
+                            <m:Column id="_IDGenColumn4" demandPopin="true" hAlign="End">
+                                <m:Text id="_IDGenText4" text="Currency" />
+                            </m:Column>
+                            <m:Column id="_IDGenColumn5" demandPopin="true" hAlign="End">
+                                <m:Text id="_IDGenText" text="Authors" />
+                            </m:Column>
+                        </m:columns>
+                        <m:items>
+                            <m:ColumnListItem id="_IDGenColumnListItem1">
+                                <m:cells>
+                                    <m:ObjectIdentifier id="_IDGenObjectIdentifier1"
+                                                      title="{title}"
+                                                      text="{ID}"/>
+                                    <m:Text id="_IDGenText5"
+                                          text="{descr}" />
+                                    <m:Text id="_IDGenText6"
+                                          text="{price}" />
+                                    <m:ObjectNumber id="_IDGenObjectNumber2"
+                                                  number="{
+                                                      parts:[{path:'currency'}],
+                                                      type: 'sap.ui.model.type.Currency',
+                                                      formatOptions: {showMeasure: false}
+                                                  }"
+                                                  unit="{currency_code}" />
+                                    <m:Text id="_IDGenText7" text="{authors/name}"></m:Text>
+                                </m:cells>
+                                
+                            </m:ColumnListItem>
+                        </m:items>
+                    </m:Table>
+                </uxap:ObjectPageSubSection>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+    </uxap:ObjectPageLayout>
+</mvc:View>
