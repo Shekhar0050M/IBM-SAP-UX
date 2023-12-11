@@ -17,6 +17,8 @@ service MyService {
             to   : 'Viewer'
         }
     ])  as projection on books.Books;
+
+    annotate Books with @odata.draft.enabled;
     entity Authors @(restrict: [
         {
             grant: [
@@ -32,7 +34,5 @@ service MyService {
             to   : 'Viewer'
         }
     ])  as projection on books.Authors;
-    // entity Books as projection on books.Books;
-    // entity Authors as projection on books.Authors;
 }
 

@@ -8,6 +8,7 @@ build-parameters:
   before-all:
     - builder: custom
       commands:
+        - npm ci
         - npx cds build --production
 modules:
   - name: Assignment_11-srv
@@ -23,6 +24,7 @@ modules:
           srv-url: ${default-url}
     requires:
       - name: Assignment_11-auth
+      - name: Assignment_11-db
 
   - name: Assignment_11
     type: approuter.nodejs
@@ -40,6 +42,14 @@ modules:
           forwardAuthToken: true
       - name: Assignment_11-auth
 
+  - name: Assignment_11-db-deployer
+    type: hdb
+    path: gen/db
+    parameters:
+      buildpack: nodejs_buildpack
+    requires:
+      - name: Assignment_11-db
+
 resources:
   - name: Assignment_11-auth
     type: org.cloudfoundry.managed-service
@@ -50,3 +60,8 @@ resources:
       config:
         xsappname: Assignment_11-${org}-${space}
         tenant-mode: dedicated
+  - name: Assignment_11-db
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared

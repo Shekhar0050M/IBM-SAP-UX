@@ -1,6 +1,16 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" xmlns:uxap="sap.uxap">
-    <uxap:ObjectPageLayout id="objectPage">
-
+     <uxap:ObjectPageLayout id="objectPage">
+         <!-- <uxap:headerTitle>
+			<uxap:ObjectPageDynamicHeaderTitle id="_IDGenObjectPageDynamicHeaderTitle1">	
+            
+				<uxap:actions>
+					<m:Button id="_IDGenButton1" text="Edit" type="Emphasized" press="onEdit"/>
+					<m:Button id="_IDGenButton2" type="Transparent" text="Delete"/>
+					<m:Button id="_IDGenButton3" type="Transparent" text="Copy"/>
+					<m:OverflowToolbarButton id="_IDGenOverflowToolbarButton1" icon="sap-icon://action" type="Transparent" text="Share" tooltip="action"/>
+				</uxap:actions>
+			</uxap:ObjectPageDynamicHeaderTitle>
+		</uxap:headerTitle> -->
         <uxap:sections>
             <uxap:ObjectPageSection id="_IDGenObjectPageSection1" title="Book Overview" showTitle="true">
                 <!-- Subsection for Book Details -->
@@ -65,5 +75,6 @@
                 </uxap:ObjectPageSubSection>
             </uxap:ObjectPageSection>
         </uxap:sections>
-    </uxap:ObjectPageLayout>
-</mvc:View>
+    </uxap:ObjectPageLayout> 
+</mvc:View> 
+

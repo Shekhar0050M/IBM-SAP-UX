@@ -12,6 +12,7 @@
         "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
     },
     "dependencies": {
-        "@sap/xssec": "^3.6.0"
+        "@sap/xssec": "^3.6.0",
+        "passport": "^0.7.0"
     }
 }
