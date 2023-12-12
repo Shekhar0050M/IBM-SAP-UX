@@ -1,19 +1,14 @@
 {
-  "name": "app",
+  "name": "approuter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node node_modules/@sap/approuter/approuter.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sap/approuter": "^14.0.0",
-    "@sap/cds": "^7.4.2",
-    "@sap/cds-dk": "^7.4.1",
-    "passport": "^0.7.0"
+    "@sap/approuter": "^14.0.0"
   },
   "engines": {
     "node": "^20.0.0"
